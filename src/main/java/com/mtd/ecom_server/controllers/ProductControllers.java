@@ -49,6 +49,6 @@ public product editProduct(@PathVariable String id, @RequestBody product newprod
     findproduct.setTags(newproduct.getTags()); // comma-separated string
     findproduct.setPrice(newproduct.getPrice());
     findproduct.setStock(newproduct.getStock());
-    return productRepo.save(findproduct);
-    }
+return productRepo.save(findproduct);
+}
 }
